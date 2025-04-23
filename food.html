@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="css/styles.css" />
+  <title>Kiljava Resort - Ruokailu</title>
+  <script>
+    function navigateToLanguage(select) {
+        const value = select.value;
+        if (value === "en") {
+            window.location.href = "food(en).html"; 
+        } else if (value === "fin") {
+            window.location.href = "food.html"; 
+        }
+    }
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo3">
+      <a href="index.html">
+        <img src="image/kiljava_logo.jpg" class="logo3" alt="Clickable Image" />
+      </a>
+    </div>    
+  
+    <ul style="text-transform: uppercase;" class="nav__links" id="nav-links">
+      <li class="link"><a href="index.html">Etusivu</a></li>
+      <li class="link"><a href="majoitus.html">Majoitus</a></li>
+      <li class="link"><a href="food.html">Ruokailu</a></li>
+      <li class="link"><a href="meeting.html">Yksityistilaisuudet</a></li>
+      <li class="link"><a href="gallery.html">Galleria</a></li>
+      <li class="link"><a href="activity.html">Aktiviteetit</a></li>
+      <li class="link"><a href="contact.html">Yhteistiedot</a></li>
+    </ul>   
+  
+    <!-- Language selection -->
+    <select class="select1" name="language" id="language" onchange="navigateToLanguage(this)">
+      <option value="fin">&#127467;&#127470; &nbsp; SUOMI</option>
+      <option value="en">&#127468;&#127463; &nbsp; ENGLISH</option>
+    </select>
+   
+  
+    <!-- Mobile menu button -->
+    <div class="nav__menu__btn" id="menu-btn" onclick="toggleMobileMenu()">
+      <i class="ri-menu-line"></i>
+      <ul class="mobile-menu">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="majoitus.html">Majoitus</a></li>
+        <li><a href="food.html">Ruokailu</a></li>
+        <li><a href="meeting.html">Yksityistilaisuudet</a></li>
+        <li><a href="gallery.html">Galleria</a></li>
+        <li><a href="activity.html">Aktiviteetit</a></li>
+        <li><a href="contact.html">Yhteistiedot</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header class="section__container header__container">
+
+    <div class="header__image__container2">
+      <div class="header__content2">
+        <h1>Ruokailu</h1>
+        <p>Nauti Kiljava Resortin aamiaispöydän, lounasbuffetin ja kahvilabaarin antimista.</p>
+        <form action="reserve(food).html">
+          <input style="margin-left: 10px; border-radius: 0; margin-top: 100px; background-color: white; color: #144544;" type="submit" value="VARAA AIKA" class="button-16">
+        </form>
+      </div>
+      
+  </header><br><br>
+  <div class="row" >
+    <div class="imgWrapper">
+        <img src="image/gallery34.jpeg" alt="">
+    </div>
+    <div class="contentWrapper">
+        <div class="content">
+
+            <h2>Aukioloajat</h2>
+            <p style="font-weight: 300;">Hotelliaamiainen sisältyy huonehintaan ja se tarjoillaan maanantai-perjantai kello 08:00-09:30 ja viikonloppuisin kello 08:00-10:00 välisenä aikana. Aamiaisbuffet on tarjolla ei-majoittuville asiakkaille hintaan 13,00€.
+
+                <br><br>Lounasbuffet tarjolla Ravintola Kiljavassa maanantai-perjantai klo11:00-13:00 hintaan 15,00€ ja lisäksi Bar Kiljava avoinna vastaanototon aukioloaikoina, josta saa myös pientä naposteltavaa.
+                
+                <br><br><p style="color: gray; font-weight: 500;">Huom! Aukioloissa ja lounastarjoiluissa esiintyy muutoksia sesonkien mukaan. Saatavuuden saa varmistettua vastaanotosta.</p></p>
+            </div>
+    </div>
+</div>
+ 
+
+  
+<br><br><br><br>
+<footer class="footer">
+  <div class="section__container footer__container">
+    <div class="footer__col">
+      <h3 style="font-style: italic; color: #144544;">HOTEL KILJAVA</h3>
+      <p>
+        Olemme iloisia, harkitsemme yöpymistä meillä ja tutustumista palveluihimme, jotka tarjoavat unohtumattoman vierailun. Kiljava Resort tarjoaa upean ympäristön, upeat näkymät ja yksilölliset palvelut lomalle, työmatkalle tai erityistilaisuuteen. 
+      </p>
+      <p>
+        Nauti herkullisesta ruoasta, saunoista ja monipuolisista aktiviteeteista. Varaa vierailusi jo tänään ja koe paras vieraanvaraisuus. Tervetuloa, teemme vierailustanne ikimuistoisen.
+      </p>
+    </div>
+    <div class="footer__col">
+      <h4>Yhteistiedot</h4>
+      <p>Kiljava Resort</p>
+        <p>Kotorannantie 49</p>
+        <p>05250 Kiljava</p>
+        <p>+358 44 743 3368</p>
+    </div>
+    <div class="footer__col">
+      <h4>Sähköpostit</h4>
+        <p>Email vastaanotto: <a style="font-style: italic;">kiljava@hotelkiljava.fi</a></p>
+        <br><p>Email myynti: <a style="font-style: italic;">sales@hotelkiljava.fi</a></p>
+  
+      </div>
+
+
+    <div class="footer__col">
+      <h4>SoMe</h4>
+      <a style="color: blue;" href="https://www.facebook.com/KiljavaResort">Facebook</a><br><br>
+      <a style="color:  #ca1939;" href="https://www.instagram.com/kiljavaresort/">Instagram</a>
+
+    </div>
+  </div>
+  <div class="footer__bar">
+    Copyright © 2024 Kiljava Resort. All rights reserved.<a style="color: #F3F4F6;">///////</a>                                                       
+  </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

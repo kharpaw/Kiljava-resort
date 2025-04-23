@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="css/styles.css" />
+  <title>Kiljava Resort - Frontpage</title>
+  <script>
+    function navigateToLanguage(select) {
+        const value = select.value;
+        if (value === "en") {
+            window.location.href = "index(en).html"; 
+        } else if (value === "fin") {
+            window.location.href = "index.html"; 
+        }
+    }
+</script>
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo3">
+      <a href="index.html">
+        <img src="image/kiljava_logo.jpg" class="logo3" alt="Clickable Image" />
+      </a>
+    </div>    
+  
+    <ul class="nav__links" id="nav-links">
+      <li class="link"><a href="index(en).html">FRONTPAGE</a></li>
+      <li class="link"><a href="majoitus(en).html">ACCOMMODATION</a></li>
+      <li class="link"><a href="food(en).html">DINING</a></li>
+      <li class="link"><a href="meeting(en).html">EVENTS</a></li>
+      <li class="link"><a href="gallery(en).html">GALLERY</a></li>
+      <li class="link"><a href="activity(en).html">ACTIVITIES</a></li>
+      <li class="link"><a href="contact(en).html">CONTACT</a></li>
+    </ul>
+  
+    <!-- Language selection -->
+    <select class="select1" name="language" id="language" onchange="navigateToLanguage(this)">
+      <option value="en">&#127468;&#127463; &nbsp; ENGLISH</option>
+      <option value="fin">&#127467;&#127470; &nbsp; SUOMI</option>
+
+    </select>
+    <!-- language option -->
+  
+    <!-- Mobile menu button -->
+    <div class="nav__menu__btn" id="menu-btn" onclick="toggleMobileMenu()">
+      <i class="ri-menu-line"></i>
+      <ul class="mobile-menu">
+        <li class="link"><a href="index(en).html">Home</a></li>
+        <li class="link"><a href="majoitus(en).html">Accommodation</a></li>
+        <li class="link"><a href="food(en).html">Dining</a></li>
+        <li class="link"><a href="meeting(en).html">Events</a></li>
+        <li class="link"><a href="gallery(en).html">Gallery</a></li>
+        <li class="link"><a href="activity(en).html">Activities</a></li>
+        <li class="link"><a href="contact(en).html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header class="section__container header__container">
+    <div class="header__image__container">
+      <div class="header__content">
+        <h1>Kiljava Resort</h1>
+        <p>Let the warm sounds of the forest and the lake calm your soul.</p>
+      </div>
+
+
+  
+
+  </header><br><br>
+  
+  <section class="availability">
+
+    <form action="reserve(en).html">
+
+       <div class="box">
+          <p style="font-weight: 500; font-size: 20px;">Check-In</p>
+          <input style="color: white;" type="date" class="input">
+       </div>
+
+       <div class="box">
+          <p style="font-weight: 500; font-size: 20px;">Check-Out</p>
+          <input style="color:white"  type="date" class="input">
+       </div>
+
+       <div class="box">
+          <p style="font-weight: 500; font-size: 20px;">ADULTS</p>
+          <select name="Alkuiset" id="" class="input">
+             <option value="1">1 Adult</option>
+             <option value="2">2 Adults</option>
+             <option value="3">3 Adults</option>
+             <option value="4">4 Adults</option>
+
+          </select>
+       </div>
+
+       <div class="box">
+          <p style="font-weight: 500; font-size: 20px;">Children</p>
+          <select  name="Lapset" id="" class="input">
+             <option value="1">1 Child</option>
+             <option value="2">2 Children</option>
+             <option value="3">3 Children</option>
+          </select>
+       </div>
+
+       <div class="box" >
+          <p style="font-weight: 500; font-size: 20px;">Rooms</p>
+          <select name="Huoneet" id="" class="input">
+             <option value="1">1 Room</option>
+             <option value="2">2 Rooms</option>
+             <option value="3">3 Rooms</option>
+             <option value="4">4 Rooms</option>
+          </select>
+       </div>
+       
+
+       <input style="margin-top: 47px;" type="submit" value="SEARCH ROOMS" class="button-17">
+
+    </form>
+ </section>  
+ 
+  <div class="section__header2">
+    <img src="image/kiljava_logo1.jpg" alt="Kiljava Logo">
+</div>
+
+  <br><br><br>
+  <div class="row" >
+    <div class="imgWrapper">
+        <img src="image/gallery37.5.png" alt="">
+    </div>
+    <div class="contentWrapper">
+        <div class="content">
+
+            <h2>Kiljava Resort</h2>
+            <p>We are pleased that you are considering staying with us and exploring the services we offer. Our service is designed to provide you with an unforgettable visit.
+
+                <br><br>Whether you are coming for a vacation, a business trip, or a special event, Kiljava Resort offers a peaceful and relaxing environment, stunning views, and personalized services that cater to all your needs. We provide delicious dining options, refreshing saunas, and a variety of leisure activities to suit everyone.
+                
+                <br><br>Book your visit with us today and enjoy the best possible hospitality. We welcome you and will make your stay memorable.</p>
+                
+            </div>
+    </div>
+</div>
+  
+
+<section class="section__container">
+    <div class="reward__container">
+      <p style="font-weight: 500;">Getting hungry?</p>
+      <h4>Check out our menu that will make you stay LONGER! &#x1F957;</h4>
+      <button style="background-color: #144544;" class="button-10" role="button"><a style="font-weight: 300; color:white;" href="menu.html">MENU</a></button>
+    </div>
+  </section>
+  
+
+
+  <section class="client">
+    <div class="section__container client__container">
+ 
+    </div>
+  </section>
+  <section class="client">
+    <div style="margin-top: -5%;" class="section__container client__container">
+      <h2 style="margin-top: -100px; color: #144544;" class="section__header">UPCOMING EVENTS</h2><br>
+      <div style="font-size: 20px; font-weight: 300;" class="section__header">SAT 19.10. DUETTOMESTARIT KARAOKE COMPETITION</div>
+      <div style="font-size: 15px; font-weight: 300;" class="section__header">Hotel Kiljava is organizing a karaoke competition in cooperation with Rikary, with pre-registration currently open. For more information about the event, please contact <br> rikaryry@gmail.com.</div><br><br>
+      <div style="font-size: 20px; font-weight: 300;" class="section__header">SAT 26.10. PSYCHO SANATORIUM MUSIC EVENT</div>
+      <div style="font-size: 15px; font-weight: 300;" class="section__header">Special rate rooms available on our website with the booking code BRAPPU, including breakfast and access to the pool and sauna during the public hours.<br> Event entry tickets are available for purchase through <a href="https://biletti.fi/tapahtumat/b-rappu">biletti.fi</a>, covering all performers of the evening:</div><br>
+      <div style="font-style: italic; font-size: 15px; font-weight: 300;" class="section__header">
+           – Gorilla (HUN) <br>
+           – The Test Pilots (SWE) <br>
+           – A Pony named Olga (GER) <br>
+           – De La Rocka <br>
+           – Buzzkillz <br>
+           – The Gallows Dance</div>
+    </div><br><br>
+
+    <div style="margin-top: -5%; font-size: 15px; font-weight: 300;" class="section__header">For more information about the event, visit <a href="https://www.facebook.com/events/1105862514021705/?acontext=%7B%22event_action_history%22%3A[]%7D">B-Rappu ry Facebook page</a>. Welcome!</div>
+  </div><br><br><br><br><br><br>
+
+  <div style="text-align: center; margin-top: -8%;" class="section__container"><button class="button-54" role="button"><a style="color: white;" href="https://www.facebook.com/KiljavaResort">READ MORE ABOUT EVENTS ON FACEBOOK</a></button></div>
+  </section>
+  <br><br><br><br>
+
+
+  <section class="section__container">
+    <div class="reward__container">
+      <p style="font-weight: 500;">20+ More Travel Destinations</p>
+      <h4>These travel destinations might interest you!</h4>
+      <button style="background-color: #003399;" class="button-54" role="button"><a style="font-weight: 300; color:white;" href="https://finlandtravel.fi/">More Travel Destinations</a></button>
+    </div>
+  </section>
+  <br><br><br><br>
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h3 style="font-style: italic; color: #144544;">HOTEL KILJAVA</h3>
+        <p>
+          We are pleased that you are considering staying with us and exploring our services, which offer an unforgettable visit. Kiljava Resort provides a beautiful environment, stunning views, and personalized services for a vacation, business trip, or special occasion.
+        </p>
+        <p>
+          Enjoy delicious food, saunas, and a variety of activities. Book your visit today and experience the best hospitality. Welcome, we will make your stay memorable.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Contact Information</h4>
+        <p>Kiljava Resort</p>
+          <p>Kotorannantie 49</p>
+          <p>05250 Kiljava</p>
+          <p>+358 44 743 3368</p>
+      </div>
+      <div class="footer__col">
+        <h4>Emails</h4>
+          <p>Reception Email: <a style="font-style: italic;">kiljava@hotelkiljava.fi</a></p>
+          <br><p>Sales Email: <a style="font-style: italic;">sales@hotelkiljava.fi</a></p>
+      </div>
+      <div class="footer__col">
+        <h4>Social Media</h4>
+        <a style="color: blue;" href="https://www.facebook.com/KiljavaResort">Facebook</a><br><br>
+        <a style="color:  #ca1939;" href="https://www.instagram.com/kiljavaresort/">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Kiljava Resort. All rights reserved.<a style="color: #F3F4F6;">///////</a>                                                       
+    </div>
+  </footer>
+  <script src="index.js"></script>
+  </body>
+  </html>
+  

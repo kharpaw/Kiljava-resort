@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="css/style.css" />
+  <title>Kiljava Resort - ETUSIVU</title>
+  <script>
+    function navigateToLanguage(select) {
+        const value = select.value;
+        if (value === "en") {
+            window.location.href = "reserve(en).html"; 
+        } else if (value === "fin") {
+            window.location.href = "reserve.html"; 
+        }
+    }
+</script>
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo3">
+      <a href="index.html">
+        <img src="image/kiljava_logo.jpg" class="logo3" alt="Clickable Image" />
+      </a>
+    </div>    
+  
+    <ul style="text-transform: uppercase;" class="nav__links" id="nav-links">
+      <li class="link"><a href="index.html">Etusivu</a></li>
+      <li class="link"><a href="majoitus.html">Majoitus</a></li>
+      <li class="link"><a href="food.html">Ruokailu</a></li>
+      <li class="link"><a href="meeting.html">Yksityistilaisuudet</a></li>
+      <li class="link"><a href="gallery.html">Galleria</a></li>
+      <li class="link"><a href="activity.html">Aktiviteetit</a></li>
+      <li class="link"><a href="contact.html">Yhteistiedot</a></li>
+    </ul>   
+  
+    <!-- Language selection -->
+    <select class="select1" name="language" id="language" onchange="navigateToLanguage(this)">
+      <option value="fin">&#127467;&#127470; &nbsp; SUOMI</option>
+      <option value="en">&#127468;&#127463; &nbsp; ENGLISH</option>
+    </select>
+  
+    <!-- Mobile menu button -->
+    <div class="nav__menu__btn" id="menu-btn" onclick="toggleMobileMenu()">
+      <i class="ri-menu-line"></i>
+      <ul class="mobile-menu">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="majoitus.html">Majoitus</a></li>
+        <li><a href="food.html">Ruokailu</a></li>
+        <li><a href="meeting.html">Yksityistilaisuudet</a></li>
+        <li><a href="gallery.html">Galleria</a></li>
+        <li><a href="activity.html">Aktiviteetit</a></li>
+        <li><a href="contact.html">Yhteistiedot</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+<br><br><br><br><br>
+  
+  <section class="availability">
+
+    <form action="">
+
+
+
+
+     <div class="box" >
+      <p>PRIVAATTI RANTASAUNA (Max 13 Henkilö)</p><br>
+      <select name="Henkilöt" id="" class="input">
+        <option value="1">1 Henkilö</option>
+        <option value="2">2 Henkilöt</option>
+        <option value="3">3 Henkilöt</option>
+        <option value="4">4 Henkilöt</option>
+        <option value="5">5 Henkilöt</option>
+        <option value="6">6 Henkilöt</option>
+        <option value="7">7 Henkilöt</option>
+        <option value="8">8 Henkilöt</option>
+        <option value="9">9 Henkilöt</option>
+        <option value="10">10 Henkilöt</option>
+        <option value="11">11 Henkilöt</option>
+        <option value="12">12 Henkilöt</option>
+        <option value="13">13 Henkilöt</option>
+      </select>
+   </div>
+
+       
+
+       <input style="margin-left: 10px; margin-top: 80px;" type="submit" value="HAE PAIKKA" class="button-17">
+
+    </form>
+ </section> <br><br><br> 
+
+
+ <section class="client">
+
+  </section>
+  <section class="client">
+    <div class="section__container client__container">
+      <div style="font-size: 20px; font-weight: 300;" class="section__header">Kiljava Resort kutsuu kokoustamaan, juhlimaan, lomailemaan ja liikkumaan. Toimintaa ja luonnonrauhaa Nurmijärvellä, vain 40 minuutin ajomatkan päässä Helsingistä.</div>
+  </section>
+ <br><br><br><br>
+
+
+ <footer class="footer">
+   <div class="section__container footer__container">
+     <div class="footer__col">
+       <h3 style="font-style: italic; color: #144544;">HOTEL KILJAVA</h3>
+       <p>
+         Olemme iloisia, harkitsemme yöpymistä meillä ja tutustumista palveluihimme, jotka tarjoavat unohtumattoman vierailun. Kiljava Resort tarjoaa upean ympäristön, upeat näkymät ja yksilölliset palvelut lomalle, työmatkalle tai erityistilaisuuteen. 
+       </p>
+       <p>
+         Nauti herkullisesta ruoasta, saunoista ja monipuolisista aktiviteeteista. Varaa vierailusi jo tänään ja koe paras vieraanvaraisuus. Tervetuloa, teemme vierailustanne ikimuistoisen.
+       </p>
+     </div>
+     <div class="footer__col">
+       <h4>Yhteistiedot</h4>
+       <p>Kiljava Resort</p>
+         <p>Kotorannantie 49</p>
+         <p>05250 Kiljava</p>
+         <p>+358 44 743 3368</p>
+     </div>
+     <div class="footer__col">
+       <h4>Sähköpostit</h4>
+         <p>Email vastaanotto: <a style="font-style: italic;">kiljava@hotelkiljava.fi</a></p>
+         <br><p>Email myynti: <a style="font-style: italic;">sales@hotelkiljava.fi</a></p>
+   
+       </div>
+ 
+ 
+     <div class="footer__col">
+       <h4>SoMe</h4>
+       <a style="color: blue;" href="https://www.facebook.com/KiljavaResort">Facebook</a><br><br>
+       <a style="color:  #ca1939;" href="https://www.instagram.com/kiljavaresort/">Instagram</a>
+ 
+     </div>
+     
+   </div>
+   <div class="footer__bar">
+     Copyright © 2024 Kiljava Resort. All rights reserved.<a style="color: #F3F4F6;">///////</a>                                                       
+   </div>
+ </footer>
+ <script src="index.js"></script>
+ </body>
+ </html>

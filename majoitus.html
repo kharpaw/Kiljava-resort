@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="css/styles.css" />
+  <title>Kiljava Resort - MAJOITUS</title>
+  <script>
+    function navigateToLanguage(select) {
+        const value = select.value;
+        if (value === "en") {
+            window.location.href = "majoitus(en).html"; 
+        } else if (value === "fin") {
+            window.location.href = "majoitus.html"; 
+        }
+    }
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo3">
+      <a href="index.html">
+        <img src="image/kiljava_logo.jpg" class="logo3" alt="Clickable Image" />
+      </a>
+    </div>    
+  
+    <ul style="text-transform: uppercase;" class="nav__links" id="nav-links">
+      <li class="link"><a href="index.html">Etusivu</a></li>
+      <li class="link"><a href="majoitus.html">Majoitus</a></li>
+      <li class="link"><a href="food.html">Ruokailu</a></li>
+      <li class="link"><a href="meeting.html">Yksityistilaisuudet</a></li>
+      <li class="link"><a href="gallery.html">Galleria</a></li>
+      <li class="link"><a href="activity.html">Aktiviteetit</a></li>
+      <li class="link"><a href="contact.html">Yhteistiedot</a></li>
+    </ul>   
+  
+    <!-- Language selection -->
+    <select class="select1" name="language" id="language" onchange="navigateToLanguage(this)">
+      <option value="fin">&#127467;&#127470; &nbsp; SUOMI</option>
+      <option value="en">&#127468;&#127463; &nbsp; ENGLISH</option>
+    </select>
+
+  
+    <!-- Mobile menu button -->
+    <div class="nav__menu__btn" id="menu-btn" onclick="toggleMobileMenu()">
+      <i class="ri-menu-line"></i>
+      <ul class="mobile-menu">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="majoitus.html">Majoitus</a></li>
+        <li><a href="food.html">Ruokailu</a></li>
+        <li><a href="meeting.html">Yksityistilaisuudet</a></li>
+        <li><a href="gallery.html">Galleria</a></li>
+        <li><a href="activity.html">Aktiviteetit</a></li>
+        <li><a href="contact.html">Yhteistiedot</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header class="section__container header__container">
+
+    <div class="header__image__container4">
+      <div class="header__content2">
+        <h1>Majoitus</h1>
+        <p>Kaikkiin huonehintoihin sisältyy aamiainen sekä sisäänpääsy uima-altaalle, saunaan ja liikuntasalille.</p>
+        <form action="reserve.html">
+          <input style="margin-left: 10px; border-radius: 0; margin-top: 100px; background-color: white; color: #144544;" type="submit" value="VARAA TÄSTÄ" class="button-16">
+        </form>
+      </div>
+      
+      
+  </header>
+
+
+  
+  <section class="section__container popular__container">
+    <h2 class="section__header" style="color: #144544; margin-top: -1%; font-style: italic;">KILJAVAN RESORTIN HUONEET</h2><br><br><br>
+    <div class="popular__grid">
+      <div class="popular__card">
+        <img src="./image/gallery18.jpg" alt="popular hotel">
+        <div class="popular__content">
+          <div class="popular__card__header">
+            <h4>Yhden Hengen Huone</h4>
+          </div>
+          <button style="border: none;" class="button-14" role="button"><a style="border: none; color: #0f1111;" href="room1.html">Näytää Lisää</a></button>
+        </div>
+      </div>
+      <div class="popular__card">
+        <img src="./image/gallery23.jpg" alt="popular hotel">
+        <div class="popular__content">
+          <div class="popular__card__header">
+            <h4>Yhden Hengen Huone (BUDGET)</h4>
+          </div>
+          <button style="border: none;"class="button-14" role="button"><a style=" border: none; color: #0f1111;" href="room2.html">Näytää Lisää</a></button>
+        </div>
+      </div>
+      <div class="popular__card">
+        <img src="./image/gallery24.jpg" alt="popular hotel">
+        <div class="popular__content">
+          <div class="popular__card__header">
+            <h4>Kahden Hengen Huone</h4>
+          </div>
+          <button style="border: none;"class="button-14" role="button"><a style="border: none; color: #0f1111;" href="room3.html">Näytää Lisää</a></button>
+        </div>
+      </div>
+      <div class="popular__card">
+        <img src="./image/gallery26.jpg" alt="popular hotel">
+        <div class="popular__content">
+          <div class="popular__card__header">
+            <h4>Suite</h4>
+          </div>
+          <button style="border: none;"class="button-14" role="button"><a style=" border: none; color: #0f1111;" href="room4.html">Näytää Lisää</a></button>
+        </div>
+      </div>
+      <div class="popular__card">
+        <img src="./image/gallery16.jpg" alt="popular hotel">
+        <div class="popular__content">
+          <div class="popular__card__header">
+            <h4>Deluxe Suite</h4>
+          </div>
+          <button style="border: none;"class="button-14" role="button"><a style="border: none; color: #0f1111;" href="room5.html">Näytää Lisää</a></button>
+        </div>
+      </div>
+      <div class="popular__card">
+        <img src="./image/gallery39.5.jpg" alt="popular hotel">
+        <div class="popular__content">
+          <div class="popular__card__header">
+            <h4>Superior Suite Deluxe</h4>
+          </div>
+          <button style="border: none;"class="button-14" role="button"><a style="border: none; color: #0f1111;" href="room6.html">Näytää Lisää</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<br><br><br><br>
+<footer class="footer">
+  <div class="section__container footer__container">
+    <div class="footer__col">
+      <h3 style="font-style: italic; color: #144544;">HOTEL KILJAVA</h3>
+      <p>
+        Olemme iloisia, harkitsemme yöpymistä meillä ja tutustumista palveluihimme, jotka tarjoavat unohtumattoman vierailun. Kiljava Resort tarjoaa upean ympäristön, upeat näkymät ja yksilölliset palvelut lomalle, työmatkalle tai erityistilaisuuteen. 
+      </p>
+      <p>
+        Nauti herkullisesta ruoasta, saunoista ja monipuolisista aktiviteeteista. Varaa vierailusi jo tänään ja koe paras vieraanvaraisuus. Tervetuloa, teemme vierailustanne ikimuistoisen.
+      </p>
+    </div>
+    <div class="footer__col">
+      <h4>Yhteistiedot</h4>
+      <p>Kiljava Resort</p>
+        <p>Kotorannantie 49</p>
+        <p>05250 Kiljava</p>
+        <p>+358 44 743 3368</p>
+    </div>
+    <div class="footer__col">
+      <h4>Sähköpostit</h4>
+        <p>Email vastaanotto: <a style="font-style: italic;">kiljava@hotelkiljava.fi</a></p>
+        <br><p>Email myynti: <a style="font-style: italic;">sales@hotelkiljava.fi</a></p>
+  
+      </div>
+
+
+    <div class="footer__col">
+      <h4>SoMe</h4>
+      <a style="color: blue;" href="https://www.facebook.com/KiljavaResort">Facebook</a><br><br>
+      <a style="color:  #ca1939;" href="https://www.instagram.com/kiljavaresort/">Instagram</a>
+
+    </div>
+  </div>
+  <div class="footer__bar">
+    Copyright © 2024 Kiljava Resort. All rights reserved.<a style="color: #F3F4F6;">///////</a>                                                       
+  </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

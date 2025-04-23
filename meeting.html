@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="css/styles.css" />
+  <title>Kiljava Resort - Yksityistilaisuudet</title>
+  <script>
+    function navigateToLanguage(select) {
+        const value = select.value;
+        if (value === "en") {
+            window.location.href = "meeting(en).html"; 
+        } else if (value === "fin") {
+            window.location.href = "meeting.html"; 
+        }
+    }
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+  <nav>
+    <div class="logo3">
+      <a href="index.html">
+        <img src="image/kiljava_logo.jpg" class="logo3" alt="Clickable Image" />
+      </a>
+    </div>    
+  
+    <ul style="text-transform: uppercase;" class="nav__links" id="nav-links">
+      <li class="link"><a href="index.html">Etusivu</a></li>
+      <li class="link"><a href="majoitus.html">Majoitus</a></li>
+      <li class="link"><a href="food.html">Ruokailu</a></li>
+      <li class="link"><a href="meeting.html">Yksityistilaisuudet</a></li>
+      <li class="link"><a href="gallery.html">Galleria</a></li>
+      <li class="link"><a href="activity.html">Aktiviteetit</a></li>
+      <li class="link"><a href="contact.html">Yhteistiedot</a></li>
+    </ul>   
+  
+    <!-- Language selection -->
+    <select class="select1" name="language" id="language" onchange="navigateToLanguage(this)">
+      <option value="fin">&#127467;&#127470; &nbsp; SUOMI</option>
+      <option value="en">&#127468;&#127463; &nbsp; ENGLISH</option>
+    </select>
+  
+    <!-- Mobile menu button -->
+    <div class="nav__menu__btn" id="menu-btn" onclick="toggleMobileMenu()">
+      <i class="ri-menu-line"></i>
+      <ul class="mobile-menu">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="majoitus.html">Majoitus</a></li>
+        <li><a href="food.html">Ruokailu</a></li>
+        <li><a href="meeting.html">Yksityistilaisuudet</a></li>
+        <li><a href="gallery.html">Galleria</a></li>
+        <li><a href="activity.html">Aktiviteetit</a></li>
+        <li><a href="contact.html">Yhteistiedot</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header class="section__container header__container">
+    <div class="header__image__container3">
+        <div class="header__content2">
+          <h1>Yksityistilaisuudet</h1>
+          <p>Kaikki tapahtumat laadukkaasti ja viihtyisästi</p>
+        </div>
+      
+  </header><br><br>
+
+  <div class="row" >
+    <div class="imgWrapper">
+        <img src="image/meeting.jpg" alt="">
+    </div>
+    <div class="contentWrapper">
+        <div class="content">
+
+            <h2>Räätälöidysti</h2>
+            <p>Kiljava Resort on monipuolinen ja viihtyisä kokous- ja kongressihotelli, jossa järjestät sujuvan kokouksen tai mieleenpainuvat juhlat majoituksineen ja tarjoiluineen. Meiltä löytyy sopivan kokoinen tila tapahtumaan kuin tapahtumaan, pikku illanistujaisista aina 400 hengen tapahtumiin saakka.<br><br>
+
+                Autamme sinua mielellämme tilaisuuden suunnittelussa ja mahdollisten lisäpalvelujen hankinnassa.<br><br>
+                
+                Voit jättää tällä lomakkeella meille tarjouspyynnön tapahtumastasi ja otamme sinuun yhteyttä.</p>
+            </div>
+    </div>
+</div>
+  <!----->
+  <section id="form-section">
+    <form class="form-content-section">
+        <div class="form-group">
+            <label for="exampleInputText">Nimi</label><br>
+          <input type="text" class="form-control textarea1" 
+            id="exampleFormControlTextarea1" >
+        </div><br>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Sähköposti</label><br>
+            <input type="email" class="form-control textarea1" 
+id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="">
+            <small id="emailHelp" class="form-text text-muted"></small>
+        </div><br>
+
+        <div class="form-group">
+            <label for="exampleInputText">Tapahtuman tyyppi<br>
+</label>
+            <input type="text" class="form-control textarea1" 
+id="exampleInputText">
+        </div><br>
+        
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Tarkempi kuvaus</label><br>
+            <textarea class="form-control" 
+id="exampleFormControlTextarea1" ></textarea>
+        </div><br>
+
+        <button  type="submit" class="button-55">LÄHETÄ</button>
+    </form>
+</section><br><br><br>
+<!------>
+<section class="client">
+  <div style="margin-top: 2%;" class="row">
+    <div class="imgWrapper" style="width: 100%;">
+      <img src="image/kota.jpg" alt=""></div>  
+      <div class="contentWrapper">
+        <div class="content">
+
+            <h2 style="font-size: 40px; font-weight: 400;">KOTA</h2>
+            <p>
+              * Kota on kesä- ja talvikäyttöön soveltuva grillausmaja, jonka ikkunoista ja terassilta aukeaa idyllinen järvimaisema. Kota on erinomainen valinta rentoon yhdessäoloon ja erähenkiseen kokkailuun<br><br>
+              * Ruoka ja juoma toimitetaan tilaisuuteen hotellin kautta<br><br>
+              * Maksimi ryhmäkoko 20 henkilöä
+          </p>
+            </div>
+            <a href="reserve(ko).html"  style="margin-top: 30px; margin-left: 15px;" class="button-18">VARAA PAIKKA</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="client">
+  <div style="margin-top: 2%;" class="row">
+    <div class="imgWrapper" style="width: 100%;">
+      <img src="image/Uima-allas.jpg" alt=""></div>  
+      <div class="contentWrapper">
+        <div class="content">
+
+            <h2 style="font-size: 40px; font-weight: 400;">UIMA-ALLAS SAUNOILLA</h2>
+            <p>
+              * Uima-allas (17 m) ja saunat ovat varattavissa myös yksityistilaisuuksiin<br><br>
+              * Miehille ja naisille omat saunat<br><br>
+              * Ulkoporeallas
+          </p>
+            </div>
+            <a href="reserve(ui).html"  style="margin-top: 30px; margin-left: 15px;" class="button-18">VARAA PAIKKA</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="client">
+  <div style="margin-top: 2%;" class="row">
+    <div class="imgWrapper" style="width: 100%;">
+      <img src="image/takkahuone.jpg" alt=""></div>  
+      <div class="contentWrapper">
+        <div class="content">
+
+            <h2 style="font-size: 40px; font-weight: 400;">TAKKAHUONE</h2>
+            <p>
+              * Kodikkaasta takkahuoneesta on näkymä uima-altaalle, ja se on tietysti kodikkaimmillaan takkatulen loimutessa <br><br>
+              * Maksimi ryhmäkoko 20 henkilöä
+          </p>
+            </div>
+            <a href="reserve(ta).html"  style="margin-top: 30px; margin-left: 15px;" class="button-18">VARAA PAIKKA</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="client">
+  <div style="margin-top: 2%;" class="row">
+    <div class="imgWrapper" style="width: 100%;">
+      <img src="image/gallery32.jpeg" alt=""></div>  
+      <div class="contentWrapper">
+        <div class="content">
+
+            <h2 style="font-size: 40px; font-weight: 400;">RUOKASALI</h2>
+            <p>
+              * Monenlaisiin tapahtumiin muunneltavaan ruokasaliin on mahdollista saada myös esiintymislava äänentoistoineen. Vietä täällä ikimuistoiset häät tai varaa omalle yrityksellesi! <br><br>
+              * Privaatti baaritiski sekä esiintymislava<br><br>
+              * Maksimi ryhmäkoko 150 henkilöä
+          </p>
+            </div>
+            <a href="reserve(food).html"  style="margin-top: 30px; margin-left: 15px;" class="button-18">VARAA PAIKKA</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="client">
+  <div style="margin-top: 2%;" class="row">
+    <div class="imgWrapper" style="width: 100%;">
+      <img src="image/KABENETIT.jpg" alt=""></div>  
+      <div class="contentWrapper">
+        <div class="content">
+
+            <h2 style="font-size: 40px; font-weight: 400;">KABENETIT</h2>
+            <p>
+              * Useat täysinvarustellut kabinetit soveltuvat erinomaisesti erilaisten kokouksien ja tilaisuuksien järjestämiseen<br><br>
+              * Ryhmäkoko alkaen viidestä henkilöstä aina 62 henkilöön saakka 
+          </p>
+            </div>
+            <a href="reserve(ta).html"  style="margin-top: 30px; margin-left: 15px;" class="button-18">VARAA PAIKKA</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="client">
+  <div style="margin-top: 2%;" class="row">
+    <div class="imgWrapper" style="width: 100%;">
+      <img src="image/AUDITORIO.jpg" alt=""></div>  
+      <div class="contentWrapper">
+        <div class="content">
+
+            <h2 style="font-size: 40px; font-weight: 400;">AUDITORIO</h2>
+            <p>
+              * Oman yrityksesi koulutustapahtuma on parhaimmillaan täysin varustellussa auditoriossamme<br><br>
+              * Auditoriossa on120 istumapaikkaa
+          </p>
+            </div>
+            <a href="reserve(au).html"  style="margin-top: 30px; margin-left: 15px;" class="button-18">VARAA PAIKKA</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="client">
+  <div style="margin-top: 2%;" class="row">
+    <div class="imgWrapper" style="width: 100%;">
+      <img src="image/rantasauna.jpg" alt=""></div>  
+      <div class="contentWrapper">
+        <div class="content">
+
+            <h2 style="font-size: 40px; font-weight: 400;">PRIVAATTI RANTASAUNA</h2>
+            <p>
+              * Oma rantasauna kristallinkirkkaan Sääksjärven rannalla. Varaa sauna tapahtumasi yhteyteen tai vietä hauska ilta kaveriporukalla!<br><br>
+              * Miehille ja naisille omat saunat sekä yhteinen takkatila <br><br>
+              * Ruoka ja juoma toimitetaan tilaisuuteen hotellin kautta  <br><br>
+              * Maksimi ryhmäkoko 30 henkilöä
+          </p>
+            </div>
+            <a href="reserve(pri).html"  style="margin-top: 30px; margin-left: 15px;" class="button-18">VARAA PAIKKA</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="client">
+  <div style="margin-top: 2%;" class="row">
+    <div class="imgWrapper" style="width: 100%;">
+      <img src="image/liikuntasalli.jpg" alt=""></div>  
+      <div class="contentWrapper">
+        <div class="content">
+
+            <h2 style="font-size: 40px; font-weight: 400;">LIIKUNTASALI</h2>
+            <p>
+              * Varaa meiltä tilat yrityksesi tai yhdistyksesi vuosikokoukselle, järjestä intensiivinen urheiluviikonloppu omalle seurallesi!<br><br>
+              * Vuokraamme liikuntasalia urheiluseuroille, minkä lisäksi sali on muunnettavissa jopa 400-paikkaiseksi kokous- tai juhlatilaksi<br><br>
+              * Mahdolliset urheilulajit sulkapallo, lentopallo, koripallo, futsal ja salibandy
+          </p>
+            </div>
+            <a href="reserve(li).html"  style="margin-top: 30px; margin-left: 15px;" class="button-18">VARAA PAIKKA</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+  
+<br><br><br><br>
+<footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h3 style="font-style: italic; color: #144544;">HOTEL KILJAVA</h3>
+        <p>
+          Olemme iloisia, harkitsemme yöpymistä meillä ja tutustumista palveluihimme, jotka tarjoavat unohtumattoman vierailun. Kiljava Resort tarjoaa upean ympäristön, upeat näkymät ja yksilölliset palvelut lomalle, työmatkalle tai erityistilaisuuteen. 
+        </p>
+        <p>
+          Nauti herkullisesta ruoasta, saunoista ja monipuolisista aktiviteeteista. Varaa vierailusi jo tänään ja koe paras vieraanvaraisuus. Tervetuloa, teemme vierailustanne ikimuistoisen.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Yhteistiedot</h4>
+        <p>Kiljava Resort</p>
+          <p>Kotorannantie 49</p>
+          <p>05250 Kiljava</p>
+          <p>+358 44 743 3368</p>
+      </div>
+      <div class="footer__col">
+        <h4>Sähköpostit</h4>
+          <p>Email vastaanotto: <a style="font-style: italic;">kiljava@hotelkiljava.fi</a></p>
+          <br><p>Email myynti: <a style="font-style: italic;">sales@hotelkiljava.fi</a></p>
+    
+        </div>
+  
+  
+      <div class="footer__col">
+        <h4>SoMe</h4>
+        <a style="color: blue;" href="https://www.facebook.com/KiljavaResort">Facebook</a><br><br>
+        <a style="color:  #ca1939;" href="https://www.instagram.com/kiljavaresort/">Instagram</a>
+  
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Kiljava Resort. All rights reserved.<a style="color: #F3F4F6;">///////</a>                                                       
+    </div>
+  </footer>
+  <script src="index.js"></script>
+  </body>
+  </html>
